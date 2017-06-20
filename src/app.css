@@ -1,0 +1,118 @@
+.app {
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 0 25px rgba(0,0,0,.04);
+}
+
+.game-header {
+  padding: 10px 40px;
+  border-radius: 10px 10px 0 0;
+  background-color: #0CABEC;
+  color: #fff;
+}
+
+.game-header h1 {
+  font-size: 34px;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.game-footer {
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 15px 40px;
+  text-align: right;
+}
+
+.game-container {
+  background-color: #fff;
+  padding: 30px 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.game-board {
+
+}
+
+.game-details {
+  padding: 0px 20px;
+}
+
+.game-details h2 {
+  font-size: 28px;
+  margin: 0px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.game-details h3 {
+  font-size: 18px;
+  margin: 0px;
+  color: #A0A0A0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.found-words {
+  list-style: none;
+  padding: 0;
+  margin: 10px 5px;
+}
+
+.blurry-text {
+   color: transparent;
+   text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.board-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  flex: 1;
+}
+
+.square {
+  flex: 1;
+  background: #F0F0F0;
+  border: 1px solid #fcfcfc;
+  border-right: 1px solid #E9E9E9;
+  border-bottom: 1px solid #E9E9E9;
+
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+
+  padding: 0;
+  text-align: center;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square.is-revealed {
+  background: #31A8E4;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  -webkit-transition: background-color 0.5s, color 0.25s;
+}
+
+.square.is-selected {
+  background: #FFB901;
+  border: 1px solid transparent;
+  -webkit-transition: background-color 0.25s;
+}
